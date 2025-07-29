@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Финансовые Калькуляторы</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- Для иконок -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+            /* Лёгкий градиентный фон */
+        }
+
+        .tool-card {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e5e7eb;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            border-color: #3b82f6;
+        }
+
+        .tool-icon {
+            font-size: 2.5rem;
+            color: #3b82f6;
+            /* Цвет иконки */
+        }
+    </style>
+</head>
+
+<body class="text-gray-800">
+    <div class="min-h-screen flex flex-col">
+        <!-- Шапка -->
+        <header class="bg-white shadow-sm">
+            <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <!-- Простая иконка калькулятора -->
+                    <i class="fas fa-calculator text-blue-500 text-3xl mr-3"></i>
+                    <h1 class="text-2xl md:text-3xl font-bold text-gray-900">Финансовые Калькуляторы</h1>
+                </div>
+                <nav>
+                    <!-- Можно добавить дополнительную навигацию, если нужно -->
+                </nav>
+            </div>
+        </header>
+
+        <!-- Основной контент -->
+        <main class="flex-grow container mx-auto px-4 py-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Инструменты для трейдеров</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Верым! Можам! Пераможам!
+                </p>
+            </div>
+
+            <!-- Сетка с карточками инструментов -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+                <!-- Карточка: Калькулятор Фандинга -->
+                <a href="funding-group.html" class="tool-card bg-white rounded-xl overflow-hidden block no-underline">
+                    <div class="p-6 flex flex-col items-center text-center">
+                        <div class="tool-icon mb-4">
+                            <i class="fas fa-coins"></i> <!-- Иконка монет/денег -->
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Топ-50 по Фандингу</h3>
+                        <p class="text-gray-600 mb-4">
+                            Рассчитывет чистую прибыль от удержания шорт-позиции для топ-50 монет на Бинансе
+                        </p>
+                        <span class="mt-auto inline-flex items-center text-blue-600 font-medium">
+                            Открыть калькулятор
+                            <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                        </span>
+                    </div>
+                </a>
+
+                <a href="funding-solo.html" class="tool-card bg-white rounded-xl overflow-hidden block no-underline">
+                    <div class="p-6 flex flex-col items-center text-center">
+                        <div class="tool-icon mb-4">
+                            <i class="fas fa-coins"></i> <!-- Иконка монет/денег -->
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Соло Фандинг</h3>
+                        <p class="text-gray-600 mb-4">
+                            Анализ прибыльности от удержания шорт-позиции для конкретной монеты
+                        </p>
+                        <span class="mt-auto inline-flex items-center text-blue-600 font-medium">
+                            Открыть калькулятор
+                            <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                        </span>
+                    </div>
+                </a>
+
+            </div>
+        </main>
+
+        <!-- Подвал -->
+        <footer class="bg-white border-t mt-12">
+            <div class="container mx-auto px-4 py-6 text-center text-gray-600 text-sm">
+                &copy; 2024 Финансовые Калькуляторы. Для трейдеров.
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
